@@ -1,0 +1,30 @@
+
+.contenedor {
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;            
+    height: 100vh;                  
+    border: 2px solid #000;         
+}
+
+
+.elemento {
+    background-color: lightblue;
+    padding: 20px;
+    border: 1px solid #000;
+    flex: 1;                        
+    margin: 5px;                    
+}
+
+
+#item1 {
+    order: 3; 
+}
+
+#item2 {
+    order: 1;
+}
+
+#item3 {
+    order: 2; 
+}
