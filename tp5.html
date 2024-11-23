@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico: Tablas y Formularios HTML</title>
+</head>
+<body>
+    <h1>Menú del Restaurante</h1>
+
+    
+    <table borde="1" cellpadding="10" cellspacing="0">
+        
+        <thead>
+            <tr>
+                <th>Nombre del Plato</th>
+                <th>Descripción</th>
+                <th>Precio (ARS)</th>
+            </tr>
+        </thead>
+       
+        <tbody>
+            <tr>
+                <td>Milanesa con Papas</td>
+                <td>Milanesa de carne servida con papas fritas.</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>Pizza Napolitana</td>
+                <td>Pizza con salsa, mozzarella, tomate y ajo.</td>
+                <td>2000</td>
+            </tr>
+            <tr>
+                <td>Empanadas</td>
+                <td>Empanadas de carne, pollo o jamón y queso.</td>
+                <td>300 cada una</td>
+            </tr>
+            <tr>
+                <td>Asado Completo</td>
+                <td>Porción de asado con ensalada y pan.</td>
+                <td>3500</td>
+            </tr>
+            <tr>
+                <td>Ensalada César</td>
+                <td>Ensalada con lechuga, pollo, crutones y aderezo César.</td>
+                <td>1200</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="3"td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h2>Formulario</h2>
+
+    
+    <form action="/enviar-reserva" method="post">
+        
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+       
+
+        
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+        <small>(Formato: 1234567890)</small>
+    
+
+        
+        <label for="cantidad-personas">Cantidad de personas:</label>
+        <input type="number" id="cantidad-personas" name="cantidad-personas" min="1" required>
+        
+
+        
+        <label for="fecha">Fecha de la reserva:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+
+       
+        <label for="hora">Hora de la reserva:</label>
+        <input type="time" id="hora" name="hora" required>
+        
+        
+        
+        <button type="submit">Enviar Reserva</button>
+    </form>
+</body>
+</html>
