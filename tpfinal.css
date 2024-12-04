@@ -1,0 +1,127 @@
+/* General */
+* {
+    box-sizing: border-box; /*Asegura que el ancho y alto de los elementos incluyan el padding y el borde*/
+    margin: 0;             /*Elimina los márgenes y rellenos predeterminados de todos los elementos*/
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    background-color: #f0f4f8;
+    color: #444;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #1e88e5; /*Fondo azul (#1e88e5)*/
+    color: white; /*Texto en blanco*/
+    padding: 20px; /*Espaciado interno de 20px*/
+    text-align: center;  /*Centra el texto*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra ligera debajo del encabezado.*/
+    position: sticky;  /*Mantiene el encabezado visible al hacer scroll.*/
+    top: 0;
+    z-index: 1000; /*Da prioridad sobre otros elementos.*/
+}
+
+header h1 {
+    font-size: 2rem; /*amaño del título principal*/
+    margin-bottom: 10px; /*Espacio debajo del título*/
+    font-weight: bold; 
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;  /*Texto blanco.*/
+    text-decoration: none; /*limina el subrayado.*/
+    margin: 0 15px;        /*Espaciado entre los enlaces y su contenido.*/
+    padding: 10px 15px;  /*Espaciado entre los enlaces y su contenido.*/
+    border-radius: 25px;  /*Bordes redondeados.*/
+    font-weight: bold;   
+    transition: background-color 0.3s ease, color 0.3s ease; /*Animación para los cambios de color.*/
+}
+
+nav a:hover {  /*Cambia el fondo y el color del texto al pasar el ratón.*/ 
+    background-color: white;
+    color: #1e88e5;
+}
+
+/* Main Content */
+main {
+    margin: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px auto; /* Centra las secciones con margen automático horizontal*/
+    padding: 20px; /* Espaciado interno.*/ 
+    border-radius: 15px;   /* Bordes redondeados.*/ 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra para dar profundidad.*/ 
+    max-width: 1200px;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /*Animación para transformaciones.*/ 
+}
+
+section:hover { /*Desplaza la sección hacia arriba y aumenta la sombra al pasar el ratón.*/ 
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: #1e88e5;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+section p {
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Images */
+section img {
+    display: block;
+    width: 100%;
+    max-height: 300px; /*Altura máxima de 300px.*/ 
+    object-fit: cover;
+    border-radius: 15px; /*ordes redondeados.*/ 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra para dar relieve.*/ 
+}
+
+/* Call-to-Action Buttons */
+.cta-button {
+    display: inline-block;
+    background-color: #1e88e5;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px; /*Bordes redondeados.*/ 
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /*Animación para cambios de fondo y tamaño.*/ 
+    font-weight: bold;
+}
+
+.cta-button:hover {  /*Oscurece el fondo y aumenta ligeramente el tamaño al pasar el ratón.*/ 
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center; /*Centra el texto.*/ 
+    padding: 20px;
+    background-color: #1e88e5;
+    color: white;
+    margin-top: 40px;
+    border-top-left-radius: 15px; /*Bordes superiores redondeados.*/
+    border-top-right-radius: 15px; /*Bordes superiores redondeados.*/ 
+    font-size: 0.9rem; /*Tamaño del texto del pie de página.*/
+}
